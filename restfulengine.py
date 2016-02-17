@@ -80,7 +80,7 @@ How To Use This Module
                 "Data Source=mssql.windward.net;"
                 "Initial Catalog=Northwind;"
                 "User=demo;Password=demo")
-        [
+        ]
 
 4. Call :py:meth:`Report.process()` with your data sources to send the request::
 
