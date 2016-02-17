@@ -1,5 +1,5 @@
-This README is for Windward Studios developers.
-
+Contributing
+============
 The module is in restfulengine.py.  This is what you distribute, and this is
 what you import.
 
@@ -13,11 +13,15 @@ This Python module uses:
 * Sphinx for documentation
     http://sphinx-doc.org/
     $ pip install sphinx
+    
+Compatibility (Python 2 and Python 3)
+-------------------------------------
+This module is compatible with either Python 2 (tested on 2.7) or 3
+(tested on 3.4) with one exception.  For Python 2, an additional module
+is required: enum (https://pypi.python.org/pypi/enum/)
 
-
-=======
 TESTING
-=======
+-------
 Tests are in tests/test_pythonclient.py. They use py.test. Once before running,
 you must run the following:
 
@@ -33,17 +37,15 @@ pytest can be found on the py.test website at pytest.org.  The tests mimic
 the original tests in the CSharp client.
 
 
-=============
 DOCUMENTATION
-=============
+-------------
 To generate documentation from the source files, run:
 
     $ make html
 
 
-=================
 PyPI distribution
-=================
+-----------------
 See http://peterdowns.com/posts/first-time-with-pypi.html
 
 Note: You need a HOME environment variable pointing to a location that contains
@@ -53,9 +55,8 @@ To upload documentation, go to edit the package at:
 https://pypi.python.org/pypi?%3Aaction=pkg_edit&name=restfulengine
 
 
-================
 FILE INFORMATION
-================
+----------------
 Sphinx generates the following directories:
     _build, _static and _templates
 
