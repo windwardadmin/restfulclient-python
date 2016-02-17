@@ -5,7 +5,7 @@ except ImportError:
 
 config = {
     'name': 'restfulengine',
-    'version': '1.0',
+    'version': '1.0.1',
     'description': 'Python client for the Windward RESTful Engine',
     'long_description': '',
     'url': 'http://www.windward.net/products/restful/',

@@ -51,6 +51,10 @@ See http://peterdowns.com/posts/first-time-with-pypi.html
 Note: You need a HOME environment variable pointing to a location that contains
 a .pypirc file.
 
+setup.py is already set up, but before pushing to pypi, you'll want to open setup.py and change the version number.
+ 
+With the version number changed, you simply have to run `python setup.py sdist upload -r pypi`
+
 To upload documentation, go to edit the package at:
 https://pypi.python.org/pypi?%3Aaction=pkg_edit&name=restfulengine
 
