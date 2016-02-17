@@ -1,1 +1,4 @@
 .idea/workspace.xml
+restfulengine.egg-info/
+.cache/v/cache/lastfailed
+*.pyc
