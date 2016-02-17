@@ -1,6 +1,7 @@
 How To Use This Module
 ======================
-More documentation can be found [On PyPI](http://pythonhosted.org/restfulengine/)
+*More documentation can be found [On PyPI](http://pythonhosted.org/restfulengine/)*
+
 1. Import the module:
 ```
 import restfulengine
@@ -24,8 +25,10 @@ report = restfulengine.create_report(
     template
 )
 ```
-3. Set up "DataSource" objects and add them to a list.
-"XmlDataSource" objects or "AdoDataSource" objects:
+3. Set up [DataSource](http://pythonhosted.org/restfulengine/#restfulengine.DataSource)
+objects and add them to a list.
+[XmlDataSource](http://pythonhosted.org/restfulengine/#restfulengine.XmlDataSource)
+objects or [AdoDataSource](http://pythonhosted.org/restfulengine/#restfulengine.AdoDataSource) objects:
 ```
 data_sources = [
     AdoDataSource(
@@ -36,13 +39,16 @@ data_sources = [
         "User=demo;Password=demo")
 ]
 ```
-4. Call "Report.process()" with your data sources to send the request:
+4. Call [Report.process()](http://pythonhosted.org/restfulengine/#restfulengine.Report.process)
+with your data sources to send the request:
 ```
 report.process(data_sources)
 ```
-5. (for async reports) call "Report.get_status()" to poll the
-server so you know when the report is done.  Then call
-"Report.get_report()" to retrieve the output.  Finally, call delete
+5. (for async reports) call
+[Report.get_status()](http://pythonhosted.org/restfulengine/#restfulengine.Report.get_status)
+to poll the server so you know when the report is done.  Then call
+[Report.get_report()](http://pythonhosted.org/restfulengine/#restfulengine.Report.get_report)
+to retrieve the output.  Finally, call delete
 when you are done with the report to delete it from the server:
 ```
 while report.get_status() == Status.working:
